@@ -1,0 +1,127 @@
+.gfield {
+  @apply mb-4 md:w-full;
+  input, select, textarea {
+    @apply w-full bg-white;
+  }
+  &.gfield_error {
+    input, select, textarea {
+      @apply border-2 border-red-500;
+    }
+  }
+  textarea {
+    @apply h-40;
+  }
+}
+
+.hidden_label label{
+  @apply hidden #{!important};
+}
+
+.gfield_visibility_hidden {
+  @apply hidden;
+}
+.validation_message {
+  @apply hidden;
+}
+.validation_error {
+  @apply text-red-500 px-0 mb-4 md:mb-4;
+}
+.gform_footer {
+  @apply md:flex md:justify-end;
+  .gform_button {
+    @apply text-white py-4 uppercase font-extrabold tracking-widest w-full cursor-pointer transition duration-150;
+  }
+}
+.gfield_required {
+  @apply hidden;
+}
+
+.gform_validation_container {
+  @apply hidden;
+}
+
+.gform_ajax_spinner {
+  @apply hidden;
+}
+
+.subscribe-form {
+  .gform_wrapper {
+    .gfield_label {
+      @apply text-white text-sm sm:text-base lg:text-xl md:mb-1 md:inline-block;
+      .gfield_required {
+        @apply inline-block;
+      }
+    }
+    .gfield {
+      @apply mb-3 text-c-blue-600 sm:mb-4 lg:mb-6;
+      input {
+        @apply lg:py-3 lg:text-lg;
+      }
+    }
+    .ginput_container_consent {
+      @apply flex items-center;
+      input {
+        @apply h-4 w-4 mr-3 flex-shrink-0 p-0 lg:h-5 lg:w-5 #{!important};
+      }
+      .gfield_consent_label {
+        @apply text-white inline-block leading-none text-sm sm:text-base #{!important};
+        a {
+          @apply underline hover:text-c-orange-100;
+        }
+      }
+    }
+    .gform_footer {
+      @apply sm:mt-2;
+      .gform_button {
+        @apply text-white py-3 font-black bg-c-orange-100 hover:opacity-75 lg:text-xl;
+      }
+    }
+    .validation_error {
+      @apply text-sm md:text-base text-center;
+    }
+  }
+  .gform_confirmation_message {
+    @apply text-center;
+  }
+}
+
+.coming-form {
+  .gform_wrapper {
+    .gfield_label {
+      @apply text-sm sm:text-base lg:text-xl md:mb-1 md:inline-block;
+      .gfield_required {
+        @apply inline-block;
+      }
+    }
+    .gfield {
+      @apply mb-3 text-c-blue-600 sm:mb-4 lg:mb-6;
+      input {
+        @apply lg:py-3 lg:text-lg border-gray-200;
+      }
+    }
+    .ginput_container_consent {
+      @apply flex items-center;
+      input {
+        @apply h-4 w-4 mr-3 flex-shrink-0 p-0 lg:h-5 lg:w-5 border-gray-500 #{!important};
+      }
+      .gfield_consent_label {
+        @apply inline-block leading-none text-sm sm:text-base #{!important};
+        a {
+          @apply underline hover:text-c-orange-100;
+        }
+      }
+    }
+    .gform_footer {
+      @apply sm:mt-2;
+      .gform_button {
+        @apply text-white py-3 font-black bg-c-orange-100 hover:opacity-75 lg:text-xl;
+      }
+    }
+    .validation_error {
+      @apply text-sm md:text-base text-center;
+    }
+  }
+  .gform_confirmation_message {
+    @apply text-center;
+  }
+}
