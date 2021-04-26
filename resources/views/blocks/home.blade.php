@@ -117,8 +117,9 @@
               </div>
             </div>
             <div class="hidden sm:block sm:w-full sm:h-full xl:h-full xl:relative xl:overflow-hidden">
-              <img class="object-cover object-center w-full h-full xl:h-auto xl:absolute xl:inset-0" src="{!! $image_5['url'] !!}" alt="">
-            </div>
+              @if($image_5)
+                <img class="object-cover object-center w-full h-full xl:h-auto xl:absolute xl:inset-0" src="{!! $image_5['url'] !!}" alt="">
+              @endif
           </div>
         </div>
 
@@ -144,7 +145,9 @@
               @endif
             </div>
             <div class="hidden sm:block sm:w-full sm:h-full sm:order-1 xl:relative xl:overflow-hidden">
-              <img class="object-cover object-center w-full h-full xl:absolute xl:inset-0" src="{!! $image_6['url'] !!}" alt="">
+              @if($image_6)
+                <img class="object-cover object-center w-full h-full xl:absolute xl:inset-0" src="{!! $image_6['url'] !!}" alt="">
+              @endif
             </div>
           </div>
         </div>
@@ -166,7 +169,9 @@
       
       
       <div id="section-6">
-        <img src="{!! $bg_10['url'] !!}" class="object-cover object-center w-full h-56 sm:hidden"alt="">
+        @if($bg_10)
+          <img src="{!! $bg_10['url'] !!}" class="object-cover object-center w-full h-56 sm:hidden"alt="">
+        @endif
         <div id="slide-10" class="relative bg-center bg-cover sm:grid sm:grid-cols-2 bg-c-blue-400">
           <div class="relative sm:order-2">
             <img class="absolute inset-0 object-cover object-center w-full h-full" src="{!! $bg_10['url'] !!}" alt="">
