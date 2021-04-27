@@ -39,7 +39,7 @@
               
               @else
                 <div class="">
-                  <a @click="open = false" class="inline-block text-sm py-3 md:pb-1 font-aktiv-ex font-semibold nav-link tracking-wider text-c-tan-100 transition duration-300 ease-in-out border-transparent border-b-2 hover:border-c-orange-100 focus:outline-none xl:ml-10 2xl:text-base {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}" href="{{ $item->url }}">
+                  <a @click="open = false" class="inline-block text-sm py-3 md:pb-1 font-aktiv-ex font-semibold nav-link tracking-wider text-c-tan-100 transition duration-300 ease-in-out border-transparent border-b-2 hover:border-c-orange-100 focus:outline-none xl:ml-10 2xl:text-base {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}" href="{{ $item->url }}" {{ $item->target }}>
                     {{ $item->label }}  
                   </a>
                 </div>
@@ -90,7 +90,7 @@
                 </div>
               @else
                 <div class="md:pb-2">
-                  <a @click="open = false" class="inline-block text-lg py-3 nav-link md:pb-1 font-aktiv-ex font-semibold tracking-wider text-c-tan-100 transition duration-300 ease-in-out border-transparent border-b-2 hover:border-c-orange-100 focus:outline-none md:text-base {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}" href="{{ $item->url }}">
+                  <a @click="open = false" class="inline-block text-lg py-3 nav-link md:pb-1 font-aktiv-ex font-semibold tracking-wider text-c-tan-100 transition duration-300 ease-in-out border-transparent border-b-2 hover:border-c-orange-100 focus:outline-none md:text-base {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}" href="{{ $item->url }}" {{ $item->target }}>
                     {{ $item->label }}  
                   </a>
               </div>

@@ -169,7 +169,7 @@
         <div class="text-white bg-c-blue-500">
           <div class="container px-6 py-12 mx-auto lg:px-8 sm:py-16 md:py-20 lg:py-24">
             <h2 class="mb-6 text-4xl font-bold text-center uppercase font-prag lg:text-5xl xl:text-6xl">{!! $title_dd !!}</h2>
-            <p class="text-center lg:text-lg xl:text-xl lg:text-left lg:leading-loose xl:leading-loose">{!! $content_dd !!}</p>
+            <p class="text-center lg:text-lg xl:text-xl lg:leading-loose xl:leading-loose">{!! $content_dd !!}</p>
             <div class="mt-8 text-center">
               <a href="{!! $link_dd['url'] !!}" class="inline-flex items-center justify-center px-8 py-3 text-sm font-black tracking-widest text-white uppercase rounded sm:inline-flex bg-c-orange-100 hover:opacity-75 lg:text-base">
                 <span>{!! $link_dd['title'] !!}</span>
