@@ -135,6 +135,7 @@
         @if($image_6)
           <img src="{!! $image_6['url'] !!}" class="object-cover object-center w-full h-48 sm:hidden"alt="">
         @endif
+        @if($content_6)
         <div>
           <div class="relative z-20 flex items-center w-full h-full py-12 bg-white sm:grid sm:grid-cols-4 sm:py-0 lg:grid-cols-2 sm:mt-8 lg:mt-12 xl:mt-16 lg:mb-12 xl:mb-16">
             <div class="px-6 lg:px-8 sm:order-2 sm:col-span-3 lg:col-span-1 sm:py-12 sm:pb-16 sm:max-w-[480px] sm:mr-auto md:max-w-[576px] sm:pl-8 md:pl-12 lg:max-w-[512px] xl:pl-12 xl:py-16 xl:pb-24 xl:pr-8 xl:max-w-screen-sm 2xl:max-w-screen-md">
@@ -160,6 +161,7 @@
             </div>
           </div>
         </div>
+        @endif
       </div>
 
       @if($show_5)
