@@ -9,13 +9,13 @@
         <div class="w-[250%] absolute inset-0 sm:w-[150%] lg:w-[125%] xl:w-full">
           <div class="aspect-w-16 aspect-h-9">
             @if($video)
-              <video id="video" class="w-full h-full" poster="{!! $bg_1['url'] !!}" autoplay muted loop>
+              <video id="video" class="w-full h-full" autoplay muted loop poster="{!! ($bg_1) ? $bg_1['url'] : ''; !!}">
                 <source src="{!! $video['url'] !!}" type="video/mp4">
               </video>
             @endif
           </div>
         </div>
-        <img class="absolute inset-0 hidden object-cover object-center w-full h-full md:hidden" src="{!! $bg_1_mobile['url'] !!}" alt="">
+        {{-- <img class="absolute inset-0 hidden object-cover object-center w-full h-full md:hidden" src="{!! $bg_1_mobile['url'] !!}" alt=""> --}}
         <div class="container z-30 flex items-end w-full h-full px-6 py-16 mx-auto md:items-center lg:px-8 sm:pt-36 lg:pt-56 xl:pt-72 2xl:pt-96">
           <div class="relative z-20 md:w-3/4 xl:w-3/4 sm:pb-0 md:ml-auto">
             <h1 class="mb-6 text-4xl font-bold text-center text-white uppercase font-prag lg:text-5xl sm:text-right lg:mb-8 xl:text-6xl">{!! $heading_1 !!}</h1>
