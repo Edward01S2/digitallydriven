@@ -143,6 +143,7 @@ class Home extends Block
             'heading_1'=> get_field('heading 1'),
             'bg_1' => get_field('bg 1'),
             'bg_1_mobile' => get_field('bg mobile'),
+            'video' => get_field('video'),
 
             'content_2' => get_field('content 2'),
             'logos_2' => get_field('logos 2'),
@@ -188,6 +189,7 @@ class Home extends Block
                 ->addText('heading 1')
                 ->addImage('bg 1')
                 ->addImage('bg mobile')
+                ->addFile('video')
 
             ->addTab('section 2')
                 ->addWysiwyg('content 2')
