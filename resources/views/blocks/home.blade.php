@@ -10,7 +10,7 @@
           <div class="aspect-w-16 aspect-h-9">
             @if($video)
               <video id="video" class="w-full h-full" autoplay muted loop poster="{!! ($bg_1) ? $bg_1['url'] : ''; !!}">
-                <source src="{!! $video['url'] !!}" type="video/mp4">
+                <source src="{!! isset($video['url']) ? $video['url'] : '' !!}" type="video/mp4">
               </video>
             @endif
           </div>
