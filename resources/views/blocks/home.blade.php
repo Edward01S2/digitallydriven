@@ -111,7 +111,7 @@
       </div>
 
 
-      <div id="section-4">
+      <div id="slide-4" class="slide">
         @if($image_5)
           <img src="{!! $image_5['url'] !!}" class="object-cover object-center w-full h-56 sm:hidden"alt="">
         @endif
@@ -162,7 +162,7 @@
         </div>
       </div>
 
-      <div id="section-5">
+      <div id="slide-5" class="slide">
         <div class="text-white bg-c-blue-500">
           <div class="container px-6 py-12 mx-auto lg:px-8 sm:py-16 md:py-20 lg:py-24">
             <h2 class="mb-6 text-4xl font-bold text-center uppercase font-prag lg:text-5xl xl:text-6xl">{!! $title_dd !!}</h2>
@@ -177,7 +177,7 @@
       </div>
       
       
-      <div id="section-6">
+      <div id="slide-6">
         @if($bg_10)
           <img src="{!! $bg_10['url'] !!}" class="object-cover object-center w-full h-56 sm:hidden"alt="">
         @endif
@@ -202,7 +202,7 @@
         </div>
       </div>
 
-      <div id="slide-12" class="relative py-12 md:py-16 slide bg-c-blue-500 lg:py-20">
+      <div id="slide-7" class="relative py-12 md:py-16 slide bg-c-blue-500 lg:py-20">
         <div class="container z-0 flex items-center w-full h-full px-6 mx-auto lg:px-8">
           <div class="relative z-20 mx-auto">
             <h1 class="mb-2 text-3xl font-bold leading-none text-center text-white uppercase sm:mb-6 font-prag sm:text-5xl xl:text-6xl">{!! $heading_12 !!}</h1>

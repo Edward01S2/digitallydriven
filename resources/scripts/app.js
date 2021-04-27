@@ -246,4 +246,31 @@ $(document).ready(() => {
     }
   });
 
+  const navLinks = gsap.utils.toArray(".nav-container .nav-link");
+  //console.log(navLinks);
+  navLinks.forEach((link, i) => {
+    link.addEventListener("click", function(e) {
+      var href = e.currentTarget.getAttribute("href")
+      var anchor = href.substring(href.indexOf("#"))
+
+      if(document.querySelectorAll(anchor).length > 0) {
+        e.preventDefault();
+        gsap.to(window, {duration: 1.5, scrollTo: {y: anchor, offsetY: 100 }});
+      }
+    });
+  });
+
+  // gsap.utils.toArray(".slide").forEach((box, i) => {
+  //   var id = box.getAttribute("id");
+  //   gsap.to(box, {
+  //     scrollTrigger: {
+  //       trigger: box,
+  //       start: "top 60%",
+  //       end: "bottom 20%",
+  //       //markers: true,
+  //       toggleClass: {targets: ".nav-container a[href='#" + id + "']", className: "active"},
+  //     },
+  //   });
+  // });
+
 });
