@@ -162,6 +162,7 @@
         </div>
       </div>
 
+      @if($show_5)
       <div id="slide-5" class="slide">
         <div class="text-white bg-c-blue-500">
           <div class="container px-6 py-12 mx-auto lg:px-8 sm:py-16 md:py-20 lg:py-24">
@@ -175,6 +176,7 @@
           </div>
         </div>
       </div>
+      @endif
       
       
       <div id="slide-6">

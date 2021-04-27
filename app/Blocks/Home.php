@@ -150,6 +150,7 @@ class Home extends Block
 
             'findings' => get_field('findings'),
 
+            'show_5' => get_field('show 5'),
             'title_5' => get_field('title 5'),
             'content_5' => get_field('content 5'),  
             'image_5' => get_field('image 5'),
@@ -218,6 +219,7 @@ class Home extends Block
                 ->addImage('image 6')
 
             ->addTab('section 5')
+                ->addTrueFalse('show 5')
                 ->addText('title dd')
                 ->addTextarea('content dd')
                 ->addLink('link dd')
