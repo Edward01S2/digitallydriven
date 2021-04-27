@@ -171,7 +171,7 @@
             <h2 class="mb-6 text-4xl font-bold text-center uppercase font-prag lg:text-5xl xl:text-6xl">{!! $title_dd !!}</h2>
             <p class="text-center lg:text-lg xl:text-xl lg:leading-loose xl:leading-loose">{!! $content_dd !!}</p>
             <div class="mt-8 text-center">
-              <a href="{!! $link_dd['url'] !!}" class="inline-flex items-center justify-center px-8 py-3 text-sm font-black tracking-widest text-white uppercase rounded sm:inline-flex bg-c-orange-100 hover:opacity-75 lg:text-base">
+              <a href="{!! $link_dd['url'] !!}" class="inline-flex items-center justify-center px-8 py-3 text-sm font-black tracking-widest text-white uppercase rounded sm:inline-flex bg-c-orange-100 hover:opacity-75 lg:text-base" target="_blank">
                 <span>{!! $link_dd['title'] !!}</span>
               </a>
             </div>
