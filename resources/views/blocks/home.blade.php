@@ -1,10 +1,30 @@
 <div class="{{ $block->classes }}" class="">
 
-  <div class="w-full h-screen slide-wrapper"> <!-- overflow-hidden -->
+  <div class="relative z-20 w-full h-screen slide-wrapper"> <!-- overflow-hidden -->
     <div class="relative w-full h-full slide-container">
+      @if($banner_text)
+      <section class="relative z-50 pt-[4rem] banner-section bg-c-blue-400 xl:pt-[4.75rem]">
+        <div class="container px-6 py-3 mx-auto lg:px-8 md:py-0">
+          <div class="flex items-center justify-between md:py-4 md:justify-center md:space-x-8 xl:space-x-12">
+            <div class="flex items-center flex-initial flex-grow-0 text-xl font-semibold text-white md:mb-0 md:space-x-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-6 h-6 md:block md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <div class="text-sm md:text-base">{!! $banner_text !!}</div>
+            </div>
+            <div clss="mt-4 flex-shrink-0">
+              <a class="hidden px-8 py-2.5 font-bold text-white uppercase bg-c-orange-100 shadow-button hover:bg-c-blue-300 hover:text-white lg:inline-block" href="{!! $banner_link['url'] !!}">{!! $banner_link['title'] !!}</a>
+              <a class="lg:hidden" href="{!! $banner_link['url'] !!}">
+                <svg fill="currentColor" width="1" height="1" viewBox="0 0 20 20" class="w-8 h-8 text-c-orange-100 hover:text-white"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      @endif
 
       {{-- SLIDE ONE --}}
-      <div id="slide-1" class="relative pt-16 slide bg-c-blue-400 hero-home">
+      <div id="slide-1" class="relative z-40 pt-16 overflow-hidden slide bg-c-blue-400 hero-home">
         <div class="absolute inset-0 w-full h-full bg-[#0C1E43] bg-opacity-70 z-20"></div>
         <div class="w-[250%] absolute inset-0 sm:w-[150%] lg:w-[125%] xl:w-full">
           <div class="aspect-w-16 aspect-h-9">

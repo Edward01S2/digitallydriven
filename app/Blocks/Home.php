@@ -139,6 +139,8 @@ class Home extends Block
     public function with()
     {
         return [
+            'banner_text' => get_field('banner text'),
+            'banner_link' => get_field('banner link'),
             'report' => get_field('report', 'options'),
             'heading_1'=> get_field('heading 1'),
             'bg_1' => get_field('bg 1'),
@@ -186,6 +188,9 @@ class Home extends Block
         $home = new FieldsBuilder('home');
 
         $home
+            ->addTab('banner')
+                ->addText('banner text')
+                ->addLink('banner link')
             ->addTab('section 1')
                 ->addText('heading 1')
                 ->addImage('bg 1')
