@@ -13,8 +13,8 @@
               <div class="text-sm md:text-base">{!! $banner_text !!}</div>
             </div>
             <div clss="mt-4 flex-shrink-0">
-              <a class="hidden px-8 py-2.5 font-bold text-white uppercase bg-c-orange-100 shadow-button hover:bg-c-blue-300 hover:text-white lg:inline-block" href="{!! $banner_link['url'] !!}">{!! $banner_link['title'] !!}</a>
-              <a class="lg:hidden" href="{!! $banner_link['url'] !!}">
+              <a class="hidden px-8 py-2.5 font-bold text-white uppercase bg-c-orange-100 shadow-button hover:bg-c-blue-300 hover:text-white lg:inline-block" href="{!! $banner_link['url'] !!}" target="_blank">{!! $banner_link['title'] !!}</a>
+              <a class="lg:hidden" href="{!! $banner_link['url'] !!}" target="_blank">
                 <svg fill="currentColor" width="1" height="1" viewBox="0 0 20 20" class="w-8 h-8 text-c-orange-100 hover:text-white"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </a>
             </div>
