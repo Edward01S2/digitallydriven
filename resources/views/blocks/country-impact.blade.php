@@ -8,7 +8,9 @@
             <div class="prose max-w-none lg:prose-lg">{!! $item['content'] !!}</div>
           </div>
           <div class="img sm:col-span-2 sm:flex sm:items-center lg:col-span-1">
-            <img class="w-auto h-56 mx-auto lg:h-64 xl:h-72" src="{!! $item['image']['url'] !!}" alt="">
+            @if($item['image'])
+              <img class="w-auto h-56 mx-auto lg:h-64 xl:h-72" src="{!! $item['image']['url'] !!}" alt="">
+            @endif
           </div>
         </div>
       @endforeach
